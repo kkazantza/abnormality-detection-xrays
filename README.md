@@ -4,3 +4,9 @@ On this project we are going to use MURA dataset which consists of 40,895 muscul
 
 * 2D Convolution Neural Network (2 different architectures) 
 * 169-Layer DenseNet Pretrained Convolutional Neural Network
+
+### Data Augmentation
+Before feeding the images into the network, we applied normalization and transformations on the training and validation dataset. We scaled the variable-sized images to 224x224. On the training dataset, a Keras ImageDataGenerator object is used to apply data augmentation. The augmentation techniques that we used are Brightness Range and Zoom Range.
+
+### Pixel Scaling
+We also performed pixel Centering and Pixel Standardization.
